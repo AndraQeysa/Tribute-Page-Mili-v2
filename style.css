@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Raleway:wght@700&display=swap");
+
+body {
+  font-family: "Montserrat", Sans-serif;
+  padding-top: 70px;
+  margin: 0;
+  background-color: #F3FCFD;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 22px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #616563;
+  transition: 0.2s;
+}
+
+#main {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#main h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 12vw;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+#main p {
+  font-size: 2.5em;
+}
+
+#img-div {
+  background-color: #d6d7d7;
+  padding: 15px;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+}
+
+#img-caption {
+  margin-top: 15px;
+  line-height: 0.7em;
+}
+
+#tribute-info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#tribute-info p {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.album {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.album li {
+  width: 800px;
+  display: flex;
+  list-style: none;
+}
+
+.album-figure {
+  padding: 15px;
+}
+
+.album-figure img {
+  max-width: 350px;
+  display: block;
+}
+
+.album article {
+  font-family: "Playfair Display", sans-serif;
+  padding-top: 15px;
+}
+
+.album article h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#tribute-info article p {
+  text-align: start;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-bottom: 3em;
+}
+
+#tribute-info article a {
+  background-color: #000;
+  padding: 10px 40px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.6em;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+
+  .album li {
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .album img {
+    max-width: 100%;
+  }
+  .album-figure,
+  #tribute-info article,
+  #tribute-info article p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #video iframe{
+    width: auto;
+    height: auto;
+  }
+}
+
+#video {
+  text-align: center;
+}
+
+#video div {
+  margin-bottom: 30px;
+}
+
+#follow {
+  background-color: #000;
+  padding: 5px 0;
+  width: 100%;
+}
+
+#follow p {
+  font-family: inherit;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+#follow ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#follow li {
+  font-size: 2.1em;
+  list-style: none;
+  margin: 0 10px;
+}
+
+#follow ul li a {
+  color: #fff;
+}
